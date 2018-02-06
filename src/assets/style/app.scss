@@ -1,0 +1,58 @@
+@import "bootstrap-sprockets";
+@import "bootstrap-variables";
+@import "bootstrap-custom";
+@import "mixins";
+
+
+
+@import "slick.scss";
+
+
+@import "header";
+@import "intro";
+@import "works";
+@import "about";
+@import "contacts";
+@import "footer";
+@import "slider";
+
+@import url('https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+@import url('https://fonts.googleapis.com/css?family=Rozha+One');
+
+
+body {
+	background-color: #172830;
+	color: #FFF;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+svg{
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+	@include ba-transition('fill, stroke');
+}
+a,
+[type="submit"],
+[type="button"],
+button,
+.btn{
+	@include ba-transition;
+}
+a{
+	& >	svg{
+		fill: currentColor;
+	}
+}

@@ -1,0 +1,98 @@
+.ba-intro {
+	position: relative;
+	background: url(../../assets/img/annie-spratt-197808.jpg), 50% 50%;
+	background-position: center;
+	background-size: cover;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	height: 100vh;
+
+	&__sup {
+
+		// position: absolute;
+		// top: 35px;
+		// right: 20px;
+		// color: #FFF;
+		// font-size: 14px;
+		// letter-spacing: 0.009em;
+		// @include breakpoint(sm){
+
+			position: absolute;
+			top: 105px;
+			left: 65px;
+			color: #FFF;
+			font: 400 24px/1.5 Arial, sans-serif;
+			word-wrap: break-word;
+			// word-spacing: 2cm;
+			width: 15px;
+			// white-space: pre-line;
+		// }
+	}
+
+	&__title {
+		position: absolute;
+		@include breakpoint(xs){
+			top: 65%;
+			right: 10%;
+			left: 40%;
+		}
+
+		@include breakpoint(sm){
+			right: 30%;
+			left: 40%;
+			top: 50%;
+		}
+
+		h1 {
+			font: 400 60px/1 "Rozha One";
+			color:  #fff;
+			@include breakpoint(xs){
+				font-size: 32px;
+				line-height: 1.2em;
+			}
+			@include breakpoint(sm){
+				font-size: 48px;
+			}
+		}
+
+		&:before {
+			position: absolute;
+			top: -25px;
+			right: -100px;
+			content: "";
+			border: 1px solid;
+			border-color: #FFF;
+			width: 325px;
+
+			@include breakpoint(xs){
+				width: 150px;
+				right: -30px;
+			}
+		}
+
+		&:after {
+			position: absolute;
+			bottom: -25px;
+			left: -130px;
+			content: "";
+			border: 1px solid;
+			border-color: #FFF;
+			width: 325px;
+
+			@include breakpoint(xs){
+				width: 150px;
+				left: -100px;
+			}
+		}
+	}
+}
+
+.ba-scroll {
+	position: absolute;
+	bottom: -30px;
+	left: 35%;
+	right: 35%;
+}

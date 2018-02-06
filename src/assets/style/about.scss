@@ -1,0 +1,45 @@
+.ba-about {
+	margin-top: 170px;
+
+	&__photo {
+		img {
+			border-radius: 50%;
+		}
+	}
+
+	&__content {
+		text-align: right;
+		// margin-left: 30px;
+		h3 {
+			position: relative;
+			// text-align: center;
+			margin-bottom: 80px;
+			font: 400 24px/1 "Rozha One";
+			@include breakpoint(sm){
+				font-size: 36px;
+				text-align: center;
+			}
+			&:after {
+				position: absolute;
+				bottom: -20px;
+				left: 0;
+				content: "";
+				border: 1px solid;
+				border-color: #fff;
+				width: 70%;
+				@include breakpoint(md){
+					width: 50%;
+				}
+			}
+		}
+
+		p {
+			font: 400 14px/1.1 Arial, sans-serif;
+
+			@include breakpoint(md){
+				font-size: 18px;
+				line-height: 1.2em;
+			}
+		}
+	}
+}

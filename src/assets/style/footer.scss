@@ -1,0 +1,15 @@
+.ba-footer {
+	margin: 180px 0;
+	text-align: center;
+
+	&__content {
+		& > i {
+			font-size: 48px;
+			color: #e74c3c;
+		}
+
+		h2 {
+			font: 400 36px/1 "Rozha One";
+		}
+	}
+}

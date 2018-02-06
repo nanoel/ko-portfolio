@@ -1,0 +1,46 @@
+.ba-contacts {
+	margin-top: 150px;
+	text-align: center;
+	font: 400 24px/1 "Rozha One";
+
+	&__content {
+
+		& > p {
+			padding: 50px 0;
+		}
+
+		.ba-contacts__link {
+			color: #e74c3c;
+		}
+	}
+
+	&__socials {
+		& > p {
+			font-size: 20px;
+			margin: 50px 0;
+		}
+	}
+}
+
+.ba-socials {
+	list-style: none;
+	& > li {
+		display: inline-block;
+		& > a {
+			color: #FFF;
+			font-size: 20px;
+			@include breakpoint(xs){
+				font-size: 16px;
+			}
+			& > i {
+				margin-right: 10px;
+				font-size: 32px;
+				vertical-align: middle;
+			}
+		}
+	}
+
+	li + li {
+		margin-left: 50px;
+	}
+}
